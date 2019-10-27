@@ -4,11 +4,11 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
-        int n = scn.nextInt();
+        double n = scn.nextInt();
         double sum = 0;
-        for (int i=1 ; i<=n ; i++){
-            sum = sum+Math.pow(2,i);
+        for (double i = 1 ; i<=n ; i++){
+            sum = sum+1/((2*i-1)*2*i);
         }
-        System.out.println((int)sum);
+        System.out.println(sum);
     }
 }
