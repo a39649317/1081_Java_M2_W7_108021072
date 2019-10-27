@@ -5,12 +5,10 @@ public class Main {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         int n = scn.nextInt();
-        String b = scn.nextLine();
+        double sum = 0;
         for (int i=1 ; i<=n ; i++){
-            for (int j=1; j<=n ; j++){
-                System.out.print(b+"");
-            }
-            System.out.println();
+            sum = sum+Math.pow(2,i);
         }
+        System.out.println((int)sum);
     }
 }
